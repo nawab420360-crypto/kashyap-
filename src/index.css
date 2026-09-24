@@ -1,0 +1,208 @@
+/* Kashyap International - Luxury Stone Exporter Design System */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-emerald-deep: #03231A;
+  --color-emerald-main: #074534;
+  --color-emerald-light: #0D644D;
+  --color-emerald-accent: #158F6F;
+  --color-gold-bright: #F3E5AB;
+  --color-gold-main: #D4AF37;
+  --color-gold-dark: #997519;
+  --color-gold-gradient: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+  --color-cream-bg: #FAF8F5;
+  --color-cream-card: #FFFFFF;
+  --color-dark-bg: #091210;
+  --color-dark-card: #101E1A;
+  --color-text-dark: #12201C;
+  --color-text-muted: #52635E;
+  --color-text-light: #E4EC9;
+  --font-serif: 'Cinzel', serif;
+  --font-accent: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --shadow-gold: 0 10px 30px -10px rgba(212, 175, 55, 0.3);
+  --shadow-emerald: 0 20px 40px -15px rgba(7, 69, 52, 0.4);
+  --glass-bg: rgba(7, 69, 52, 0.65);
+  --glass-border: rgba(212, 175, 55, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-dark);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.text-gold-gradient {
+  background: var(--color-gold-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gold-solid {
+  color: var(--color-gold-main);
+}
+
+.text-emerald {
+  color: var(--color-emerald-main);
+}
+
+/* Glassmorphism & Cards */
+.glass-panel {
+  background: rgba(9, 25, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+  transition: all 0.3s ease;
+}
+
+.gold-border-glow:hover {
+  border-color: var(--color-gold-main);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+}
+
+/* Buttons */
+.btn-gold {
+  background: var(--color-gold-gradient);
+  color: #03231A;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.85rem 1.8rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+  filter: brightness(1.08);
+}
+
+.btn-emerald {
+  background: var(--color-emerald-main);
+  color: #F3E5AB;
+  border: 1px solid var(--color-gold-main);
+  font-weight: 600;
+  padding: 0.85rem 1.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.btn-emerald:hover {
+  background: var(--color-emerald-light);
+  border-color: #FFF;
+  color: #FFF;
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: var(--color-gold-bright);
+  border: 1px solid var(--color-gold-main);
+  padding: 0.85rem 1.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: #FFF;
+  color: #FFF;
+  transform: translateY(-2px);
+}
+
+/* Keyframe Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.floating-element {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #03231A;
+}
+::-webkit-scrollbar-thumb {
+  background: #B38728;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F3E5AB;
+}

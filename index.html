@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kashyap International — Premium Quartzite & Granite Exporter from India</title>
+<meta name="description" content="Kashyap International is an India-based exporter of premium Quartzite and Granite, supplying natural stone to importers, distributors, fabricators, contractors and project buyers worldwide.">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+<!-- Google Fonts for Luxury Stone Typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark: #03231A;
+  --dark-surface: #091210;
+  --dark-card: #101E1A;
+  --emerald-main: #074534;
+  --emerald-light: #0D644D;
+  --gold: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-dark: #997519;
+  --gold-gradient: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+  --stone: #52635E;
+  --light: #FAF8F5;
+  --white: #ffffff;
+  --radius: 14px;
+  --shadow: 0 12px 32px rgba(3, 35, 26, 0.12);
+  --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.25);
+  --font-serif: 'Cinzel', serif;
+  --font-accent: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); color: #12201C; background: var(--light); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; transition: all 0.25s ease; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+section { padding: 90px 0; }
+h2 { font-family: var(--font-serif); font-size: 2.3rem; font-weight: 700; color: var(--dark); margin-bottom: 12px; text-align: center; }
+.sub { text-align: center; color: var(--stone); max-width: 720px; margin: 0 auto 55px; font-size: 1.05rem; }
+
+/* ===== TOP INFO BAR ===== */
+.top-bar { background: #021a13; color: var(--gold-light); font-size: 0.8rem; padding: 8px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+.top-bar-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.top-contact { display: flex; gap: 20px; align-items: center; }
+.top-contact a:hover { color: var(--white); }
+.export-badge { background: var(--emerald-main); border: 1px solid rgba(212, 175, 55, 0.4); padding: 2px 10px; border-radius: 4px; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px; color: var(--gold-light); }
+
+/* ===== HEADER & NAVIGATION ===== */
+header { position: sticky; top: 0; z-index: 1000; background: rgba(7, 69, 52, 0.95); backdrop-filter: blur(12px); color: var(--white); border-bottom: 1px solid rgba(212, 175, 55, 0.3); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+.logo { display: flex; align-items: center; gap: 14px; }
+.logo-img { width: 48px; height: 48px; object-fit: contain; background: var(--white); border-radius: 8px; border: 1.5px solid var(--gold); padding: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.logo-text { display: flex; flex-direction: column; }
+.logo-title { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; color: var(--white); }
+.logo-sub { font-size: 0.65rem; font-weight: 700; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; }
+
+nav ul { display: flex; list-style: none; gap: 28px; align-items: center; }
+nav a { padding: 8px 0; font-size: 0.92rem; font-weight: 600; color: #e4ecdd; }
+nav a:hover, nav a.active { color: var(--gold-light); }
+.dropdown { position: relative; }
+.dropdown-menu { position: absolute; top: 100%; left: 0; background: var(--dark); color: var(--white); min-width: 200px; border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: 0 15px 35px rgba(0,0,0,0.4); padding: 10px 0; display: none; list-style: none; z-index: 100; }
+.dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a { display: flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.9rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.dropdown-menu li a:hover { background: var(--emerald-main); color: var(--gold-light); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 28px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; cursor: pointer; border: none; }
+.btn-gold { background: var(--gold-gradient); color: #03231A; box-shadow: var(--shadow-gold); }
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.45); filter: brightness(1.08); }
+.btn-outline { border: 1.5px solid var(--gold); color: var(--gold-light); background: transparent; }
+.btn-outline:hover { background: rgba(212, 175, 55, 0.15); border-color: var(--white); color: var(--white); transform: translateY(-2px); }
+.btn-dark { background: var(--dark); color: var(--gold-light); border: 1px solid var(--gold); }
+.btn-dark:hover { background: var(--emerald-main); color: var(--white); border-color: var(--white); }
+
+/* Mobile Menu Toggle */
+.mobile-toggle { display: none; background: none; border: none; color: var(--gold); font-size: 1.8rem; cursor: pointer; }
+
+/* ===== HERO ===== */
+.hero { position: relative; min-height: 90vh; display: flex; align-items: center; color: var(--white); overflow: hidden; background: var(--dark); }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.4; filter: brightness(0.9); transition: scale 10s ease; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(3,35,26,0.9) 0%, rgba(3,35,26,0.7) 60%, rgba(7,69,52,0.6) 100%); z-index: 1; }
+.hero-content { position: relative; z-index: 2; max-width: 840px; padding: 60px 24px; margin: 0 auto; text-align: center; }
+.hero .tag { display: inline-block; color: var(--gold-light); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background: rgba(7,69,52,0.8); border: 1px solid rgba(212,175,55,0.4); padding: 6px 18px; border-radius: 30px; margin-bottom: 20px; backdrop-filter: blur(8px); }
+.hero h1 { font-family: var(--font-serif); font-size: 3.4rem; font-weight: 800; margin-bottom: 16px; line-height: 1.15; color: var(--white); text-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+.hero h1 span { background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p.sub-lead { font-family: var(--font-accent); font-style: italic; font-size: 1.4rem; color: var(--gold-light); margin-bottom: 18px; }
+.hero p.intro { margin: 0 auto 36px; color: #d1dcd8; max-width: 750px; font-size: 1.05rem; font-weight: 300; }
+.hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== BRAND INTRO ===== */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.split-img-box { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); border: 2px solid rgba(212, 175, 55, 0.3); }
+.split img { width: 100%; height: 480px; object-fit: cover; }
+.tag-badge { color: var(--emerald-main); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 8px; display: inline-block; }
+blockquote { border-left: 4px solid var(--gold); background: var(--dark); color: var(--gold-light); padding: 24px 28px; border-radius: 0 var(--radius) var(--radius) 0; margin-top: 28px; font-family: var(--font-accent); font-style: italic; font-size: 1.15rem; box-shadow: var(--shadow); }
+
+/* ===== PRODUCT CARDS ===== */
+.products-sec { background: var(--dark-surface); color: var(--white); }
+.products-sec h2 { color: var(--white); }
+.products-sec .sub { color: #a1b5ae; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+.card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: all 0.35s ease; border: 1px solid rgba(212, 175, 55, 0.2); flex-direction: column; display: flex; }
+.card:hover { transform: translateY(-8px); border-color: var(--gold); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+.card img { height: 280px; width: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.card:hover img { transform: scale(1.06); }
+.card-body { padding: 28px; text-align: left; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.card-body h3 { font-family: var(--font-serif); font-size: 1.4rem; color: var(--dark); margin-bottom: 8px; font-weight: 700; }
+.card-body p { color: var(--stone); margin-bottom: 20px; font-size: 0.95rem; }
+
+/* ===== WHY US ===== */
+.why { background: var(--dark); color: var(--white); }
+.why h2 { color: var(--white); }
+.why .sub { color: #a1b5ae; }
+.icon { width: 60px; height: 60px; border-radius: 12px; background: var(--gold-gradient); color: var(--dark); display: grid; place-items: center; font-size: 1.6rem; margin-bottom: 20px; box-shadow: 0 6px 18px rgba(212, 175, 55, 0.3); }
+.why .card { background: var(--dark-card); border: 1px solid rgba(212, 175, 55, 0.25); color: var(--white); }
+.why .card:hover { border-color: var(--gold); background: #152621; }
+.why .card-body h3 { color: var(--gold-light); }
+.why .card-body p { color: #a1b5ae; }
+
+/* ===== APPLICATIONS ===== */
+.apps .grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.apps .card { position: relative; height: 260px; overflow: hidden; }
+.apps .card img { height: 100%; opacity: 0.75; transition: all 0.5s ease; filter: brightness(0.85); }
+.apps .card:hover img { opacity: 1; transform: scale(1.1); filter: brightness(1); }
+.apps .label { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; background: linear-gradient(to top, rgba(3,35,26,0.95) 0%, rgba(3,35,26,0.2) 60%, transparent 100%); color: var(--white); font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; }
+
+/* ===== PROCESS ===== */
+.process { background: var(--white); }
+.steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-top: 60px; counter-reset: step; }
+.step { text-align: center; position: relative; padding: 70px 12px 20px; background: var(--light); border-radius: 12px; border: 1px solid #e5e0d5; transition: all 0.3s; }
+.step:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: var(--shadow); }
+.step::before { counter-increment: step; content: counter(step); position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 48px; height: 48px; border-radius: 50%; background: var(--gold-gradient); color: var(--dark); display: grid; place-items: center; font-family: var(--font-serif); font-weight: 800; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4); }
+.step h4 { font-family: var(--font-serif); font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+.step p { font-size: 0.8rem; color: var(--stone); }
+
+/* ===== TESTIMONIALS ===== */
+.testi { background: #eef2f0; }
+.carousel { position: relative; max-width: 800px; margin: 0 auto; overflow: hidden; border-radius: var(--radius); border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: var(--shadow); }
+.slides { display: flex; transition: transform 0.5s ease-in-out; }
+.slide { min-width: 100%; background: var(--white); padding: 50px 40px; text-align: center; }
+.slide .stars { color: var(--gold); margin-bottom: 16px; font-size: 1.2rem; letter-spacing: 4px; }
+.slide p { font-family: var(--font-accent); font-style: italic; font-size: 1.25rem; color: var(--dark); margin-bottom: 20px; line-height: 1.7; }
+.slide strong { font-family: var(--font-serif); font-size: 1rem; color: var(--emerald-main); display: block; font-weight: 700; }
+.car-nav { display: flex; justify-content: center; gap: 12px; margin-top: 24px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: #c5d3ce; border: none; cursor: pointer; transition: all 0.3s; }
+.dot.active { background: var(--gold); width: 28px; border-radius: 6px; }
+
+/* ===== CREDENTIALS ===== */
+.cred-slider { overflow: hidden; margin-top: 36px; padding: 10px 0; }
+.cred-track { display: flex; gap: 24px; width: max-content; animation: scroll 22s linear infinite; }
+.cred { background: var(--dark-card); border: 1px solid rgba(212, 175, 55, 0.3); padding: 18px 42px; border-radius: 10px; font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem; color: var(--gold-light); letter-spacing: 1px; white-space: nowrap; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ===== FOOTER ===== */
+footer { background: #021812; color: #a1b5ae; padding: 75px 0 0; border-top: 1px solid rgba(212, 175, 55, 0.3); font-size: 0.9rem; }
+.foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 36px; }
+footer h4 { font-family: var(--font-serif); color: var(--gold-light); margin-bottom: 18px; font-size: 1.05rem; letter-spacing: 0.5px; border-bottom: 1px solid rgba(7,69,52,0.8); padding-bottom: 8px; }
+footer ul { list-style: none; }
+footer li { margin-bottom: 10px; }
+footer a:hover { color: var(--gold); }
+.foot-logo { display: flex; align-items: center; gap: 12px; color: var(--white); font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; margin-bottom: 16px; }
+.foot-logo img { width: 40px; height: 40px; object-fit: contain; background: var(--white); border-radius: 6px; border: 1px solid var(--gold); padding: 2px; }
+.bottom { border-top: 1px solid rgba(7,69,52,0.8); margin-top: 50px; padding: 22px 0; text-align: center; font-size: 0.85rem; color: #768a83; }
+
+/* ===== QUOTE MODAL ===== */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); z-index: 2000; display: none; place-items: center; padding: 20px; }
+.modal-backdrop.active { display: grid; }
+.modal { background: var(--dark); border: 2px solid var(--gold); border-radius: 16px; max-width: 600px; width: 100%; padding: 32px; color: var(--white); position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.6); }
+.modal-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--stone); font-size: 1.5rem; cursor: pointer; }
+.modal-close:hover { color: var(--gold); }
+.modal-title { font-family: var(--font-serif); font-size: 1.6rem; color: var(--gold-light); margin-bottom: 6px; }
+.form-group { margin-bottom: 16px; text-align: left; }
+.form-group label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--gold-light); margin-bottom: 6px; }
+.form-control { width: 100%; background: #091210; border: 1px solid #1a332a; border-radius: 6px; padding: 12px 14px; color: var(--white); font-family: inherit; font-size: 0.9rem; outline: none; }
+.form-control:focus { border-color: var(--gold); }
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 1024px) {
+  .steps { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .split { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media(max-width: 768px) {
+  nav ul { display: none; }
+  .mobile-toggle { display: block; }
+  .hero h1 { font-size: 2.3rem; }
+  .hero p.sub-lead { font-size: 1.15rem; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .top-bar-flex { justify-content: center; }
+}
+@media(max-width: 560px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  section { padding: 60px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP INFO BAR -->
+<div class="top-bar">
+  <div class="container top-bar-flex">
+    <div class="top-contact">
+      <span>📞 Phone: <a href="tel:+917665267765">+91-76652-67765</a></span>
+      <span>📍 Udaipur, Rajasthan, India</span>
+    </div>
+    <div>
+      <span class="export-badge">ISO CERTIFIED NATURAL STONE EXPORTER</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="nav container">
+    <a href="#home" class="logo">
+      <img src="images/logo.jpg" alt="Kashyap International Logo" class="logo-img">
+      <div class="logo-text">
+        <span class="logo-title">KASHYAP</span>
+        <span class="logo-sub">INTERNATIONAL</span>
+      </div>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown">
+          <a href="#products">Products ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#products">Quartzite Slabs</a></li>
+            <li><a href="#products">Granite Slabs</a></li>
+          </ul>
+        </li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <button onclick="openModal()" class="btn btn-gold">Request a Quote</button>
+      <button class="mobile-toggle" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home" style="padding:0">
+  <!-- Looping stone visual backdrop -->
+  <img src="images/emerald_quartzite.png" alt="Quartzite & Granite Stock Visual" class="hero-bg">
+  <div class="hero-content">
+    <span class="tag">Natural Stone · Export Quality</span>
+    <h1>Premium <span>Quartzite & Granite</span> from India</h1>
+    <p class="sub-lead">Natural stone selected for quality. Prepared for global markets.</p>
+    <p class="intro">Kashyap International is an India-based exporter of premium Quartzite and Granite, supplying natural stone to importers, distributors, fabricators, contractors and project buyers worldwide.</p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn btn-gold">Explore Quartzite</a>
+      <a href="#products" class="btn btn-outline">Explore Granite</a>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND INTRO -->
+<section id="about">
+  <div class="container split">
+    <div class="split-img-box">
+      <img src="images/emerald_quartzite.png" alt="Quartzite and Granite blocks">
+    </div>
+    <div>
+      <span class="tag-badge">Direct From Rajasthan</span>
+      <h2 style="text-align:left">From India to the World</h2>
+      <p style="color:var(--gold-dark);font-weight:700;margin-bottom:14px;font-size:1.1rem">Natural Stone. Professional Supply. Global Reach.</p>
+      <p>India offers an exceptional range of natural stone, with distinctive colours, patterns and geological characteristics. At Kashyap International, we connect international buyers with carefully selected Quartzite and Granite, supported by professional sourcing, quality-focused processing, customized requirements and export coordination.</p>
+      <blockquote>Our core objective: deliver consistently premium natural stone to global buyers — with quality you can trust at every step.</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products-sec">
+  <div class="container">
+    <h2>Our Products</h2>
+    <p class="sub">Two flagship natural stones, selected and processed for international export standards.</p>
+    <div class="grid">
+      <div class="card" id="gallery">
+        <img src="images/emerald_quartzite.png" alt="Quartzite Slabs">
+        <div class="card-body">
+          <div>
+            <h3>Quartzite</h3>
+            <p>Exceptionally hard, naturally elegant stone with striking veining patterns — ideal for kitchen countertops, bookmatched cladding and luxury surfaces.</p>
+          </div>
+          <a href="#products" onclick="openModal('Quartzite')" class="btn btn-dark">Explore Quartzite</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/granite_factory.png" alt="Granite Slabs">
+        <div class="card-body">
+          <div>
+            <h3>Granite</h3>
+            <p>Durable, versatile and timeless — Indian granite in a wide range of uniform black, galaxy, red and grey shades for project buyers worldwide.</p>
+          </div>
+          <a href="#products" onclick="openModal('Granite')" class="btn btn-dark">Explore Granite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="container">
+    <h2>Why Kashyap International?</h2>
+    <p class="sub">Six reasons buyers across the globe choose us as their trusted natural stone partner.</p>
+    <div class="grid">
+      <div class="card"><div class="card-body"><div class="icon">💎</div><h3>Premium Stone Selection</h3><p>Carefully selected Granite & Quartzite with a focus on quality, consistency, and natural beauty.</p></div></div>
+      <div class="card"><div class="card-body"><div class="icon">✅</div><h3>Uncompromising Quality</h3><p>Every order is handled with attention to specifications, finishing, dimensions, and overall quality.</p></div></div>
+      <div class="card"><div class="card-body"><div class="icon">🛠️</div><h3>Customized Solutions</h3><p>Tailored sizes, thicknesses, finishes, packaging, and quantities to meet your exact requirements.</p></div></div>
+      <div class="card"><div class="card-body"><div class="icon">🚢</div><h3>Reliable Export Partner</h3><p>Professional coordination, clear communication, secure packaging, and dependable shipment handling.</p></div></div>
+      <div class="card"><div class="card-body"><div class="icon">🤝</div><h3>Transparent & Trustworthy</h3><p>Straightforward communication and honest business practices built for long-term relationships.</p></div></div>
+      <div class="card"><div class="card-body"><div class="icon">🌍</div><h3>Global Standards. Indian Expertise</h3><p>Combining India's natural stone expertise with an export-focused approach for international buyers.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="apps">
+  <div class="container">
+    <h2>Designed by Nature. Used by Professionals.</h2>
+    <p class="sub">Our natural stone brings character and strength to prestigious projects across industries.</p>
+    <div class="grid">
+      <div class="card"><img src="images/emerald_quartzite.png" alt="Interior Design"><div class="label">Interior Design</div></div>
+      <div class="card"><img src="images/granite_factory.png" alt="Hospitality"><div class="label">Hospitality</div></div>
+      <div class="card"><img src="images/hero_quarry_1790226253540.png" alt="Flooring"><div class="label">Flooring</div></div>
+      <div class="card"><img src="images/taj_mahal_quartzite_1790226304567.png" alt="Wall Cladding"><div class="label">Wall Cladding</div></div>
+      <div class="card"><img src="images/emerald_quartzite.png" alt="Countertops & Vanities"><div class="label">Countertops & Vanities</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <h2>Consistency from Selection to Shipment</h2>
+    <p class="sub">Every international order begins with understanding the buyer's requirement.</p>
+    <div class="steps">
+      <div class="step"><h4>Requirement</h4><p>Specification Review</p></div>
+      <div class="step"><h4>Selection</h4><p>Quarry Block Cut</p></div>
+      <div class="step"><h4>Processing</h4><p>Gangsaw & Polish</p></div>
+      <div class="step"><h4>Quality Check</h4><p>100% Inspection</p></div>
+      <div class="step"><h4>Packaging</h4><p>ISPM-15 Wooden Crates</p></div>
+      <div class="step"><h4>Export</h4><p>Port Container Loading</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <p class="sub">Feedback from international partners across global markets.</p>
+    <div class="carousel" id="carousel">
+      <div class="slides">
+        <div class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"Consistent quality slabs and professional communication from enquiry to delivery. A dependable export partner."</p>
+          <strong>— Importer, Italy 🇮🇹</strong>
+        </div>
+        <div class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"Secure fumigated wooden packaging, on-time shipment, and Quartzite stone that matched our specifications exactly."</p>
+          <strong>— Fabricator, USA 🇺🇸</strong>
+        </div>
+        <div class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"Customized sizes and mirror finishes delivered as promised. We look forward to long-term business cooperation."</p>
+          <strong>— Distributor, UAE 🇦🇪</strong>
+        </div>
+      </div>
+      <div class="car-nav">
+        <button class="dot active" onclick="go(0)"></button>
+        <button class="dot" onclick="go(1)"></button>
+        <button class="dot" onclick="go(2)"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section style="background:var(--dark)">
+  <div class="container">
+    <h2 style="color:var(--white)">Authorized Credentials & Registrations</h2>
+    <div class="cred-slider">
+      <div class="cred-track">
+        <div class="cred">FIEO MEMBER</div><div class="cred">GST REGISTERED</div><div class="cred">MSME CERTIFIED</div>
+        <div class="cred">DGFT AUTHORIZED</div><div class="cred">IEC CODE</div><div class="cred">UDHYOG AADHAR</div>
+        <div class="cred">FIEO MEMBER</div><div class="cred">GST REGISTERED</div><div class="cred">MSME CERTIFIED</div>
+        <div class="cred">DGFT AUTHORIZED</div><div class="cred">IEC CODE</div><div class="cred">UDHYOG AADHAR</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container foot-grid">
+    <div>
+      <div class="foot-logo">
+        <img src="images/logo.jpg" alt="Logo">
+        <span>Kashyap International</span>
+      </div>
+      <p style="margin-bottom:8px">📞 <a href="tel:+917665267765">+91-76652-67765</a></p>
+      <p style="margin-bottom:8px">✉️ export@kashyapinternational.com</p>
+      <p>📍 22, Maharana Udaisingh Market,<br>Udaipole, Udaipur, Rajasthan 313001, India</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#why">Why Kashyap</a></li>
+        <li><a href="#about">Vision & Mission</a></li>
+        <li><a href="#process">Quality Commitment</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">Granite Slabs</a></li>
+        <li><a href="#products">Quartzite Slabs</a></li>
+        <li><a href="#products">Taj Mahal Quartzite</a></li>
+        <li><a href="#products">Absolute Black Granite</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Export & Orders</h4>
+      <ul>
+        <li><a href="#process">Order Process</a></li>
+        <li><a href="#process">Payment Terms</a></li>
+        <li><a href="#process">Packaging & Loading</a></li>
+        <li><a href="#process">Shipping & Delivery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#contact">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#" onclick="openModal()">Request a Quote</a></li>
+        <li><a href="#contact">Download Catalogue</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom container">
+    © 2026 Kashyap International. All Rights Reserved. • Granite & Quartzite • Global Export • Quality You Can Trust.
+  </div>
+</footer>
+
+<!-- REQUEST A QUOTE MODAL -->
+<div class="modal-backdrop" id="quoteModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h3 class="modal-title">Request a Quote</h3>
+    <p style="font-size:0.85rem;color:var(--stone);margin-bottom:20px;">Direct export pricing for Quartzite & Granite slabs from Udaipur, Rajasthan.</p>
+    
+    <form onsubmit="submitForm(event)">
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" required class="form-control" placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" required class="form-control" placeholder="buyer@company.com">
+      </div>
+      <div class="form-group">
+        <label>Stone Variety & Destination Port</label>
+        <input type="text" id="stoneTypeInput" class="form-control" placeholder="e.g. Taj Mahal Quartzite 20mm to Houston Port">
+      </div>
+      <div class="form-group">
+        <label>Requirements & Quantity</label>
+        <textarea rows="3" class="form-control" placeholder="Provide quantity (e.g. 1 container / 450 sqm) and finishes..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-gold" style="width:100%;margin-top:10px;">Submit Quote Request</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// Carousel Script
+let idx = 0;
+const slides = document.querySelector('.slides');
+const dots = document.querySelectorAll('.dot');
+function go(i) {
+  idx = i;
+  slides.style.transform = `translateX(-${i * 100}%)`;
+  dots.forEach((d, n) => d.classList.toggle('active', n === i));
+}
+setInterval(() => {
+  idx = (idx + 1) % 3;
+  go(idx);
+}, 6000);
+
+// Modal Script
+function openModal(stone) {
+  if (stone) {
+    document.getElementById('stoneTypeInput').value = stone + ' Slabs';
+  }
+  document.getElementById('quoteModal').classList.add('active');
+}
+function closeModal() {
+  document.getElementById('quoteModal').classList.remove('active');
+}
+function submitForm(e) {
+  e.preventDefault();
+  alert('Thank you! Your quote request has been sent to Kashyap International export desk.');
+  closeModal();
+}
+</script>
+</body>
+</html>
